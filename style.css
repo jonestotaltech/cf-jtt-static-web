@@ -17,7 +17,7 @@ body {
 
 header {
     background: #ffffff;
-    padding: 15px 0;
+    padding: 20px 0; /* Increased padding top and bottom */
     border-bottom: 2px solid #e1e8ed;
 }
 
