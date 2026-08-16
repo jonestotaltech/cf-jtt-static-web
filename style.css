@@ -22,9 +22,9 @@ header {
 }
 
 header .logo {
-    height: 45px;
-    background: transparent; /* Ensures no default box background */
-    object-fit: contain;
+    height: 75px; /* Adjust this number to make the logo larger or smaller */
+    background: transparent;
+    object-exit: contain;
 }
 
 nav a {
