@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333333;
-    background-color: #f7f9fc; /* A very soft, clean technical off-white */
+    background-color: #f7f9fc;
 }
 
 .container {
@@ -22,23 +22,22 @@ header {
 }
 
 header .logo {
-    height: 45px; /* Adjusts your transparent logo cleanly in the header */
+    height: 45px;
 }
 
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #1a4a75; /* Matches the deep blue from your brand text */
+    color: #1a4a75;
     font-weight: bold;
     transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: #0077cc; /* Brighter accent blue matching your logo nodes */
+    color: #0077cc;
 }
 
 .hero {
-    /* Uses a gradient matching the dark navy to bright blue of your logo's circuit ring */
     background: linear-gradient(135deg, #0d233a, #1a4a75);
     color: white;
     text-align: center;
@@ -52,7 +51,7 @@ nav a:hover {
 }
 
 .hero p {
-    color: #d0e1fd; /* Soft light blue for readable contrast */
+    color: #d0e1fd;
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto 20px auto;
@@ -60,7 +59,7 @@ nav a:hover {
 
 .btn {
     display: inline-block;
-    background: #0077cc; /* Vibrant action blue */
+    background: #0077cc;
     color: white;
     padding: 12px 28px;
     text-decoration: none;
@@ -82,7 +81,7 @@ nav a:hover {
 .services h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #0d233a; /* Dark navy text */
+    color: #0d233a;
 }
 
 .service-grid {
@@ -94,7 +93,7 @@ nav a:hover {
 .card {
     background: #ffffff;
     border: 1px solid #e1e8ed;
-    border-top: 4px solid #0077cc; /* Top accent border matching your brand */
+    border-top: 4px solid #0077cc;
     padding: 30px;
     border-radius: 8px;
     flex: 1;
@@ -107,10 +106,46 @@ nav a:hover {
     margin-top: 0;
 }
 
+/* Contact Section */
+.contact {
+    padding: 70px 20px;
+    background: #f7f9fc;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #0d233a;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #4a5568;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.contact .container {
+    flex-direction: column;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
 footer {
     text-align: center;
     padding: 25px;
-    background: #0d233a; /* Matches the dark tone in your logo */
+    background: #0d233a;
     color: #a0aec0;
     font-size: 0.9rem;
 }
