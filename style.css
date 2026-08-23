@@ -20,7 +20,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 15px 0;
+    padding: 20px 0; /* Slightly increased padding to frame the larger logo */
 }
 
 .header-container {
@@ -30,7 +30,7 @@ body {
 }
 
 .logo {
-    max-height: 110px; /* Increased to give it a more prominent, clear presence */
+    max-height: 140px; /* Bumps the size up even more */
     width: auto;
     display: block;
 }
