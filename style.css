@@ -29,11 +29,40 @@ body {
     align-items: center;
 }
 
-.logo {
-    max-height: 80px; /* Crisp, clean, and balanced */
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-icon {
+    max-height: 55px;
     width: auto;
     display: block;
 }
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.brand-tagline {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #64748b;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
 .nav-menu ul {
     list-style: none;
     margin: 0;
