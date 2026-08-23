@@ -3,74 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jones Total Tech | IT Services & Solutions</title>
+    <title>Jones Total Tech | IT Support & Solutions Adelaide</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo-icon-only.png">
 </head>
 <body>
 
-    <!-- HEADER / HERO SECTION (Placeholder structure) -->
+    <!-- Header Section -->
     <header class="site-header">
         <div class="container header-container">
-            <div class="logo">
-                <h1>Jones Total Tech</h1>
+            <div class="logo-area">
+                <a href="#" class="brand-link">
+                    <img src="images/logo-icon-only.png" alt="Jones Total Tech Icon" class="logo-icon">
+                    <div class="brand-text">
+                        <span class="brand-name">JONES TOTAL TECH</span>
+                        <span class="brand-tagline">IT Support & Solutions</span>
+                    </div>
+                </a>
             </div>
-            <nav class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#partners">Partners</a>
-                <a href="#enquiry-form">Contact</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <!-- WHAT WE DO / SERVICES SECTION -->
-    <section class="services-section" id="services">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <div class="section-header">
-                <h2>What We Do</h2>
-                <p class="section-subtitle">Comprehensive, enterprise-grade IT solutions tailored to keep your business secure, connected, and productive.</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Managed IT Services</h3>
-                    <p>Streamline your operations and boost workplace productivity with proactive management and expert day-to-day support.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🔒</div>
-                    <h3>Cyber Security</h3>
-                    <p>Protect your digital assets using multi-layered security frameworks and robust risk management strategies.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">☁️</div>
-                    <h3>Cloud Solutions & M365</h3>
-                    <p>Maximise your team's collaboration and flexibility with secure cloud migrations and efficient Microsoft 365 management.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">📞</div>
-                    <h3>Business Phone Systems</h3>
-                    <p>Empower your business communications with modern, reliable cloud and VoIP phone systems.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🛡️</div>
-                    <h3>Data Backup & Continuity</h3>
-                    <p>Securely safeguard what matters most to your business with reliable, tested backup and disaster recovery solutions.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Network & Infrastructure</h3>
-                    <p>Design, deploy, and maintain high-performance switching, enterprise wireless, and firewall security across your site.</p>
+            <div class="hero-text">
+                <h1>Reliable IT Support & Solutions for Your Business</h1>
+                <p>Proactive managed services, cybersecurity, and expert systems engineering based in Adelaide.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PARTNER TICKER SECTION -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <p>Jones Total Tech delivers enterprise-grade IT support, systems engineering, and robust cybersecurity frameworks tailored to modern businesses. We focus on security-by-design, operational resilience, and streamlined IT standard operating procedures to keep your systems secure and your team productive.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <div class="underline"></div>
+                <p class="services-intro">Comprehensive technology solutions designed to scale with your organisation.</p>
+            </div>
+            <div class="service-grid">
+                <div class="card">
+                    <h3>Managed IT Support</h3>
+                    <ul>
+                        <li>Helpdesk & Technical Support</li>
+                        <li>Infrastructure Monitoring</li>
+                        <li>Server Maintenance & Restores</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Cybersecurity</h3>
+                    <ul>
+                        <li>Security-by-Design Frameworks</li>
+                        <li>Essential Eight Hardening</li>
+                        <li>Proactive Risk Management</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Systems & Cloud</h3>
+                    <ul>
+                        <li>Network Engineering</li>
+                        <li>Telephony & Communications</li>
+                        <li>Standard Operating Procedures (SOPs)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Ticker Section -->
     <section class="ticker-section" id="partners">
         <div class="container">
             <h2>Partnering with Industry Leaders</h2>
@@ -91,7 +117,7 @@
                 <div class="ticker-item"><img src="images/partner-hp.png" alt="HP"></div>
                 <div class="ticker-item"><img src="images/partner-aruba.png" alt="HPE Aruba"></div>
                 
-                <!-- Set 2 of Logos (Exact duplicate for seamless infinite looping) -->
+                <!-- Set 2 of Logos (Exact duplicate for smooth infinite loop) -->
                 <div class="ticker-item"><img src="images/partner-microsoft.png" alt="Microsoft"></div>
                 <div class="ticker-item"><img src="images/partner-cisco.png" alt="Cisco"></div>
                 <div class="ticker-item"><img src="images/partner-ringcentral.png" alt="RingCentral"></div>
@@ -107,45 +133,36 @@
         </div>
     </section>
 
-    <!-- MICROSOFT FORM ENQUIRY SECTION -->
-    <section class="enquiry-section" id="enquiry-form">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Send Us a Message</h2>
-                <p class="section-subtitle">Fill out the form below and we’ll get back to you as soon as possible.</p>
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+                <p class="services-intro">Ready to elevate your IT infrastructure? Reach out today.</p>
             </div>
             
             <div class="form-wrapper">
                 <iframe width="100%" height="520px" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=htlzQS1CpkK0qfdeOcjOJpksNkQfEydOoWgYQ_ZSw7xUMTZJN1FBSkJaNEQ5SEFCVEJNUUg3WUU3UC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
             </div>
-        </div>
-    </section>
 
-    <!-- CONTACT DETAILS FOOTER BANNER -->
-    <section class="contact-footer-section">
-        <div class="container">
-            <div class="contact-content-box">
-                <h2>Ready to streamline and secure your IT?</h2>
-                <p>Get in touch with us today to discuss your business technology needs, cybersecurity, or infrastructure projects.</p>
-                
-                <div class="contact-methods">
-                    <a href="tel:0877267233" class="contact-pill">
-                        <span class="icon">📞</span>
-                        <span>08 7726 7233</span>
-                    </a>
-                    <a href="mailto:info@jonestotaltech.com.au" class="contact-pill">
-                        <span class="icon">✉️</span>
-                        <span>info@jonestotaltech.com.au</span>
-                    </a>
-                </div>
+            <div class="contact-methods">
+                <a href="tel:0877267233" class="contact-pill">
+                    <span>📞</span>
+                    <span>08 7726 7233</span>
+                </a>
+                <a href="mailto:info@jonestotaltech.com.au" class="contact-pill">
+                    <span>✉️</span>
+                    <span>info@jonestotaltech.com.au</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- BOTTOM COPYRIGHT & SOCIAL FOOTER -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-flex">
-            <p>&copy; 2026 Jones Total Tech. All rights reserved. Designed by Jones Total Tech.</p>
+            <p>&copy; 2026 Jones Total Tech. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/profile.php?id=61557873112623" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
