@@ -1,171 +1,235 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jones Total Tech | IT Support & Solutions Adelaide</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Base Reset & Typography */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #334155;
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
 
-    <!-- Header Section -->
-    <header class="site-header">
-        <div class="container header-container">
-            <div class="logo-area">
-                <img src="images/logo.png" alt="Jones Total Tech Logo" class="logo">
-            </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact" class="nav-cta">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <h1>Expert IT Support & Solutions</h1>
-                <p>Reliable technology services, infrastructure management, and strategic consulting for businesses and homes across Adelaide.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                    <a href="#services" class="btn btn-secondary">Our Services</a>
-                </div>
-            </div>
-        </div>
-    </section>
+/* Header & Navigation */
+.site-header {
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Jones Total Tech</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-content">
-                <p>Led by founder and owner David Jones, bringing over 25 years of industry experience supporting businesses of all sizes. We bring deep, practical knowledge to the table, delivering real-world, pragmatic approaches to IT problems—while understanding that not every business has the luxury of procuring "best-of-breed" solutions.</p>
-                <p>Based in Adelaide, South Australia, we champion a proactive <strong>Security by Design</strong> philosophy, aligning our solutions with robust frameworks like the Essential Eight to ensure your systems remain secure and resilient.</p>
-            </div>
-        </div>
-    </section>
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <div class="underline"></div>
-                <p class="services-intro">Comprehensive, secure, and strategic IT solutions tailored for businesses and homes.</p>
-            </div>
-            <div class="service-grid">
-                <!-- Card 1 -->
-                <div class="card">
-                    <h3>Procurement Services</h3>
-                    <ul>
-                        <li>Hardware and software sourcing</li>
-                        <li>Competitive vendor quoting and selection</li>
-                        <li>Lifecycle procurement and asset planning</li>
-                        <li>Volume licensing and supply chain management</li>
-                    </ul>
-                </div>
-                <!-- Card 2 -->
-                <div class="card">
-                    <h3>General Support</h3>
-                    <ul>
-                        <li>Help desk and day-to-day user assistance</li>
-                        <li>Software installation, updates, and troubleshooting</li>
-                        <li>Peripheral setup and device configuration</li>
-                        <li>Prompt, reliable technical issue resolution</li>
-                    </ul>
-                </div>
-                <!-- Card 3 -->
-                <div class="card">
-                    <h3>Infrastructure Management</h3>
-                    <ul>
-                        <li>Server deployment and maintenance</li>
-                        <li>Network architecture and hardware rollout</li>
-                        <li>System monitoring and performance tuning</li>
-                        <li>Scalable, reliable technical foundations</li>
-                    </ul>
-                </div>
-                <!-- Card 4 -->
-                <div class="card">
-                    <h3>Cybersecurity</h3>
-                    <ul>
-                        <li>Essential Eight framework alignment</li>
-                        <li>Security by Design &amp; risk hardening</li>
-                        <li>Threat detection &amp; incident prevention</li>
-                        <li>Data protection &amp; privacy compliance</li>
-                    </ul>
-                </div>
-                <!-- Card 5 -->
-                <div class="card">
-                    <h3>Cloud Solutions</h3>
-                    <ul>
-                        <li>AWS, Microsoft 365, &amp; Azure environment management</li>
-                        <li>Cloud migrations &amp; hybrid integration</li>
-                        <li>Secure cloud storage &amp; file sharing</li>
-                        <li>Backup, redundancy, &amp; disaster recovery</li>
-                    </ul>
-                </div>
-                <!-- Card 6 -->
-                <div class="card">
-                    <h3>IT Strategy &amp; Consultation</h3>
-                    <ul>
-                        <li>Technology roadmapping &amp; alignment</li>
-                        <li>Project management &amp; system transitions</li>
-                        <li>Virtual CIO (vCIO) advisory services</li>
-                        <li>Technical governance &amp; policy development</li>
-                    </ul>
-                </div>
-                <!-- Card 7 -->
-                <div class="card">
-                    <h3>Small Business IT</h3>
-                    <ul>
-                        <li>Proactive managed support &amp; maintenance</li>
-                        <li>Hardware lifecycle &amp; asset management</li>
-                        <li>Standard Operating Procedures (SOPs)</li>
-                        <li>Organisational technical maturity</li>
-                    </ul>
-                </div>
-                <!-- Card 8 -->
-                <div class="card">
-                    <h3>Home User Support</h3>
-                    <ul>
-                        <li>Fast troubleshooting &amp; hardware repairs</li>
-                        <li>Wi-Fi optimisation &amp; home network setup</li>
-                        <li>Smart device &amp; peripheral integration</li>
-                        <li>Clear, jargon-free technical assistance</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+.logo {
+    max-height: 45px;
+    width: auto;
+}
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact Us</h2>
-                <div class="underline"></div>
-                <p>Get in touch for professional IT support and consultation.</p>
-            </div>
-            
-            <div class="form-wrapper">
-                <iframe width="640px" height="480px" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=htlzQS1CpkK0qfdeOcjOJpksNkQfEydOoWgYQ_ZSw7xUMTZJN1FBSkJaNEQ5SEFCVEJNUUg3WUU3UC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Jones Total Tech. All rights reserved. Adelaide, South Australia.</p>
-        </div>
-    </footer>
+.nav-menu a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
 
-</body>
-</html>
+.nav-menu a:hover {
+    color: #0284c7;
+}
+
+.nav-cta {
+    background: #0284c7;
+    color: #ffffff !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-cta:hover {
+    background: #0369a1;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: left;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #0284c7;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #0369a1;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #475569;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Section Shared Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.underline {
+    height: 4px;
+    width: 60px;
+    background: #0284c7;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* About Section */
+.about {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+.about-content p {
+    margin-bottom: 25px;
+}
+
+/* Services Section */
+.services {
+    padding: 90px 0;
+    background: #f1f5f9;
+}
+
+.services-intro {
+    color: #64748b;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 10px;
+}
+
+.card ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Footer */
+.site-footer {
+    background: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9rem;
+}
