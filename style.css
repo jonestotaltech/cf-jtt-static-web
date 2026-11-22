@@ -27,6 +27,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .brand-link {
@@ -69,7 +71,8 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .nav-menu a {
@@ -104,7 +107,7 @@ body {
 }
 
 .hero-text {
-    max-width: 700px;
+    max-width: 720px;
 }
 
 .hero h1 {
@@ -112,17 +115,19 @@ body {
     margin-bottom: 20px;
     font-weight: 800;
     letter-spacing: -0.025em;
+    line-height: 1.15;
 }
 
 .hero p {
     font-size: 1.25rem;
-    color: #94a3b8;
+    color: #cbd5e1;
     margin-bottom: 30px;
 }
 
 .hero-buttons {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -190,6 +195,10 @@ body {
     margin-bottom: 25px;
 }
 
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
 /* Services Section */
 .services {
     padding: 90px 0;
@@ -206,6 +215,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px;
+}
+
+@media (min-width: 992px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .card {
@@ -398,4 +413,22 @@ body {
 
 .footer-social a:hover {
     color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+    }
+
+    .nav-menu ul {
+        gap: 14px;
+    }
 }
